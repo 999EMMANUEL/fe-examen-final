@@ -1,7 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import Landing from "@/pages/Landing";
 import NotFound from "@/pages/NotFound";
-import UnderConstruction from "@/pages/UnderConstruction";
+import ReportarFraude from "@/pages/ReportarFraude";
+import Reportes from "@/pages/Reportes";
 
 export const router = createBrowserRouter([
   {
@@ -10,7 +11,11 @@ export const router = createBrowserRouter([
   },
   {
     path: "/reportar-estafa",
-    element: <UnderConstruction />,
+    element: <ReportarFraude />,
+  },
+  {
+    path: "/reportes",
+    element: <Reportes />,
   },
   {
     path: "*",
